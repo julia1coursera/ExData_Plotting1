@@ -1,5 +1,16 @@
 ## Introduction
 
+
+This repository contains four PNG files and four R code files
+prepared by Julia for Course Project 1
+
+===========================================
+
+Text below comprises the assignment instructions contained in 
+the README from the repo of Dr Peng.
+
+============================================
+
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
 Learning Repository</a>, a popular repository for machine learning
