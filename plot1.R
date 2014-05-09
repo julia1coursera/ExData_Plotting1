@@ -1,6 +1,7 @@
 ###################################################
 #  prior to running this script: 
-#  data file must be extracted from zip archive 
+#  data file "household_power_consumption.txt" must be 
+#  extracted from zip archive 
 #  and placed in working directory 
 ##################################################
 

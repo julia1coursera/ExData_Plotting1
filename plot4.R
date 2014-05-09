@@ -18,7 +18,7 @@ plotdays <- as.Date(c("2007-02-01", "2007-02-02"), format="%Y-%m-%d")
 pdata <- data[data$Date %in% plotdays, ]
 #verifty that number of data rows equates to 2 days * 24 hours * 60 minutes =  2880
 length(pdata$Date)
-#add complete date-time variable
+#add date-time variable
 pdata$dtime <- strptime(paste(strftime(pdata$Date), pdata$Time, sep = " "), "%Y-%m-%d %H:%M:%S")
 
 #create  plot 4
@@ -32,7 +32,7 @@ plot(pdata$dtime, pdata$Voltage, main = "", type = "l", ylab = "Voltage", xlab =
 plot(pdata$dtime, pdata$Sub_metering_1, main = "", type = "l", col = "black", ylab = "Energy sub metering", xlab = "")
 lines(pdata$dtime, pdata$Sub_metering_2, col = "red")
 lines(pdata$dtime, pdata$Sub_metering_3, col = "blue")
-legend(1170312160, 36, names(pdata)[7:9], lty = 1, col = c("black", "red", "blue"), box.lty = 0)
+legend("topright", names(pdata)[7:9], lty = 1, col = c("black", "red", "blue"), bty = "n")
 
 plot(pdata$dtime, pdata$Global_reactive_power, main = "", type = "l", ylab = "Global_reactive_power", xlab = "datetime")
 
